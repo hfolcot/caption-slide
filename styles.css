@@ -1,7 +1,7 @@
-body .carousel .carousel-item {
+.carousel1 .carousel .carousel-item {
   position: relative;
 }
-body .carousel .carousel-item .gradient {
+.carousel1 .carousel .carousel-item .gradient {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -11,18 +11,18 @@ body .carousel .carousel-item .gradient {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
-body .carousel .carousel-item .carousel-caption {
+.carousel1 .carousel .carousel-item .carousel-caption {
   right: initial;
   bottom: 40%;
   text-align: left;
 }
-body .carousel .carousel-item .carousel-caption .step1 {
+.carousel1 .carousel .carousel-item .carousel-caption .slide-fade-from-left {
   animation: slide-from-left1 2000ms ease-out normal;
 }
-body .carousel .carousel-item .carousel-caption .step2 {
+.carousel1 .carousel .carousel-item .carousel-caption .slide-fade-from-left2 {
   animation: slide-from-left2 2000ms ease-out normal;
 }
-body .carousel .carousel-item .carousel-caption .step3 {
+.carousel1 .carousel .carousel-item .carousel-caption .slide-fade-from-left3 {
   animation: slide-from-left3 2000ms ease-out normal;
 }
 @keyframes slide-from-left1 {
@@ -61,5 +61,55 @@ body .carousel .carousel-item .carousel-caption .step3 {
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+.carousel2 .carousel .carousel-item {
+  position: relative;
+}
+.carousel2 .carousel .carousel-item .gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-left {
+  animation: slide-from-left1 2000ms ease-out normal;
+}
+.carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-right {
+  animation: slide-from-right 2000ms ease-out normal;
+}
+.carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-bottom {
+  animation: slide-from-bottom 2000ms ease-out normal;
+}
+@keyframes slide-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
