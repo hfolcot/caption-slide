@@ -1,0 +1,81 @@
+body {
+    .carousel {
+        .carousel-item {
+            position: relative;
+            .gradient {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            .carousel-caption {
+                right     : initial;
+                bottom    : 40%;
+                text-align: left;
+
+                .step1 {
+                    animation: slide-from-left1 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+                }
+
+                .step2 {
+                    animation: slide-from-left2 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+                }
+
+                .step3 {
+                    animation: slide-from-left3 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes slide-from-left1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+@keyframes slide-from-left2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    40% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+@keyframes slide-from-left3 {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    75% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
