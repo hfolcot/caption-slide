@@ -28,7 +28,7 @@
 @keyframes slide-from-left1 {
   0% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
   }
   40% {
     opacity: 1;
@@ -38,11 +38,11 @@
 @keyframes slide-from-left2 {
   0% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
   }
   40% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
   }
   75% {
     opacity: 1;
@@ -52,11 +52,11 @@
 @keyframes slide-from-left3 {
   0% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
   }
   75% {
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
@@ -77,13 +77,23 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-left {
-  animation: slide-from-left1 2000ms ease-out normal;
+  animation: slide-from-left1a 2000ms ease-out normal;
 }
 .carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-right {
   animation: slide-from-right 2000ms ease-out normal;
 }
 .carousel2 .carousel .carousel-item .carousel-caption .slide-fade-from-bottom {
   animation: slide-from-bottom 2000ms ease-out normal;
+}
+@keyframes slide-from-left1a {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 @keyframes slide-from-right {
   0% {

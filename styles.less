@@ -37,7 +37,7 @@
 @keyframes slide-from-left1 {
     0% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     40% {
@@ -49,12 +49,12 @@
 @keyframes slide-from-left2 {
     0% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     40% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     75% {
@@ -66,12 +66,12 @@
 @keyframes slide-from-left3 {
     0% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     75% {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     100% {
@@ -97,7 +97,7 @@
             .carousel-caption {
 
                 .slide-fade-from-left {
-                    animation: slide-from-left1 2000ms ease-out normal;
+                    animation: slide-from-left1a 2000ms ease-out normal;
                 }
 
                 .slide-fade-from-right {
@@ -111,6 +111,18 @@
         }
     }
 
+}
+
+@keyframes slide-from-left1a {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateX(00px);
+    }
 }
 
 @keyframes slide-from-right {
