@@ -17,13 +17,13 @@ body .carousel .carousel-item .carousel-caption {
   text-align: left;
 }
 body .carousel .carousel-item .carousel-caption .step1 {
-  animation: slide-from-left1 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+  animation: slide-from-left1 2000ms ease-out normal;
 }
 body .carousel .carousel-item .carousel-caption .step2 {
-  animation: slide-from-left2 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+  animation: slide-from-left2 2000ms ease-out normal;
 }
 body .carousel .carousel-item .carousel-caption .step3 {
-  animation: slide-from-left3 1500ms cubic-bezier(0.4, 0, 0.2, 1) normal;
+  animation: slide-from-left3 2000ms ease-out normal;
 }
 @keyframes slide-from-left1 {
   0% {
